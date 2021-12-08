@@ -1,0 +1,46 @@
+{
+  "column": [
+    {
+      "field": "song",
+      "headerName": "Song name",
+      "width": 150,
+      "editable": true
+    },
+    {
+      "field": "artist",
+      "headerName": "Artist Name",
+      "width": 150,
+      "editable": true
+    },
+    {
+      "field": "songReleaseDate",
+      "headerName": "Release date",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "playCount",
+      "headerName": "Play count",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricA",
+      "headerName": "Metric A",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricB",
+      "headerName": "Metric B",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricC",
+      "headerName": "Metric C",
+      "width": 110,
+      "editable": true
+    }
+  ]
+}
