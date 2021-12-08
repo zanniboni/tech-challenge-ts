@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Introduction = styled.section`
-  background: #34495E;
+export const HeaderStyle = styled.section`
+  background: #1ABC9C;
   margin: 20px;
-  padding: 40px;
-  color: white;
+  padding: 20px;
+  color: black;
   text-align: center;
   font-family: consolas;
   font-size: 30px;

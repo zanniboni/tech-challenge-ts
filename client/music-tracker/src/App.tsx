@@ -1,6 +1,6 @@
 /* Components */
-import * as Playlist from "../src/Feature/MusicTracker/components/Datatable.component";
-import Header from "./components/Header/Header.component";
+import MusicTracker from "../src/Feature/MusicTracker/views/Home/Tracker.component";
+import Navbar from "./components/Navbar/Navbar.component";
 import Homepage from "./Feature/Home/views/Homepage.component";
 
 /* ApolloClient Setup */
@@ -35,8 +35,7 @@ import {
 const App = () => {
   let routes = useRoutes([
     { path: "/", element: <Homepage /> },
-    /*     { path: "component2", element: <Component2 /> }, */
-    // ...
+    { path: "/musictracker", element: <MusicTracker /> },
   ]);
   return routes;
 };
@@ -44,6 +43,7 @@ const App = () => {
 const AppWrapper = () => {
   return (
     <Router>
+      <Navbar />
       <App />
     </Router>
   );

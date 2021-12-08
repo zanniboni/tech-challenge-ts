@@ -1,8 +1,8 @@
-import express from "express"; 
+import express from "express";
 import { Application } from 'express';
 
 import { graphqlHTTP } from "express-graphql";
-import {schema} from "./schema/schema"
+import { schema } from "./Services/GraphQL/schema/schema"
 import cors from "cors";
 
 const app: Application = express()
@@ -10,7 +10,7 @@ const app: Application = express()
 /* Habilitar cross-origin requests */
 app.use(cors());
 
-app.use(  
+app.use(
   "/graphql",
   graphqlHTTP({
     schema,
