@@ -41,6 +41,84 @@
       "headerName": "Metric C",
       "width": 110,
       "editable": true
+    },
+    {
+      "field": "metricD",
+      "headerName": "Metric D",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricE",
+      "headerName": "Metric E",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricF",
+      "headerName": "Metric F",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricG",
+      "headerName": "Metric G",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricH",
+      "headerName": "Metric H",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricI",
+      "headerName": "Metric I",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricJ",
+      "headerName": "Metric J",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricK",
+      "headerName": "Metric K",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricL",
+      "headerName": "Metric L",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricM",
+      "headerName": "Metric M",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricN",
+      "headerName": "Metric N",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricO",
+      "headerName": "Metric O",
+      "width": 110,
+      "editable": true
+    },
+    {
+      "field": "metricP",
+      "headerName": "Metric P",
+      "width": 110,
+      "editable": true
     }
   ]
 }

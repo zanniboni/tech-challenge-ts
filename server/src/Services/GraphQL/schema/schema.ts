@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList } from 'graphql';
 import * as _ from "lodash";
-import songData from "../../aws/s3data.json"
+import songData from "../../../routes/aws/s3data.json"
 
 /* const
   { GraphQLObjectType,

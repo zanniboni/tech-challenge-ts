@@ -1,22 +1,15 @@
 import express from "express";
 import { Application } from 'express';
-
-import { graphqlHTTP } from "express-graphql";
-import { schema } from "./Services/GraphQL/schema/schema"
 import cors from "cors";
+import routes from './routes/main/routes'
 
 const app: Application = express()
 
 /* Habilitar cross-origin requests */
 app.use(cors());
 
-app.use(
-  "/graphql",
-  graphqlHTTP({
-    schema,
-    graphiql: true,
-  })
-);
+app.use(express.json());
+app.use(routes);
 
 const PORT = 4000;
 app.listen(PORT, () => {
