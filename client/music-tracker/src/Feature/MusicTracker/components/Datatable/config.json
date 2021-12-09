@@ -2,7 +2,7 @@
   "column": [
     {
       "field": "song",
-      "headerName": "Song name",
+      "tile": "Song name",
       "width": 150,
       "editable": true
     },

@@ -1,33 +1,71 @@
 /* Imports */
-import { graphql } from '@apollo/client/react/hoc';
+import client from '../../../../services/ApolloSetup'
 import { getMusicsQuery } from "./queries";
-import config from './config.json'
+import MaterialTable from "material-table";
+/* import config from './config.json' */
 
 /* Componentes */
-import { DataGrid, GridRowsProp } from "@mui/x-data-grid";
-const columns = config.column
+/* import { DataGrid, GridRowsProp } from "@mui/x-data-grid"; */
+/* const columns = config.column */
 
-interface Prop {
+/* interface Prop {
   musics?: GridRowsProp
 }
+ */
 
-const Playlist = (props: Prop) => {
-  console.log(props.musics);
+const tableColumnConfig = [
+  {
+    tile: "Song name",
+    field: "song",
+  },
+  {
+    title: "Artist Name",
+    field: "artist"
+  },
+  {
+    title: "Release date",
+    field: "songReleaseDate",
+  },
+  {
+    title: "Play count",
+    field: "playCount",
+  },
+  {
+    title: "Metric A",
+    field: "metricA",
+  },
+  {
+    title: "Metric B",
+    field: "metricB",
+  },
+  {
+    title: "Metric C",
+    field: "metricC",
+  }
+]
+
+const remoteData = () => {
+  return client.query({
+    query: getMusicsQuery
+  }).then((res) => {
+    return {
+      data: res.data.musics,
+      page: 50,
+      totalCount: 100
+    }
+  })
+}
+
+const Playlist = () => {
   return (
     <div style={{ height: 400, width: "100%" }}>
-      {/* <DataGrid
-        getRowId={(row) =>
-          `${row.artist}-${row.song}-${row.songReleaseDate}`
-            .split(" ")
-            .join("_")
-        }
-        rows={props.musics}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-        disableSelectionOnClick
-      /> */}
+      {<MaterialTable
+        columns={tableColumnConfig}
+        data={remoteData}
+        options={{
+          toolbar: false
+        }}
+      />}
     </div>
   );
 }
